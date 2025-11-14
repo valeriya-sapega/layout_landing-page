@@ -1,0 +1,19 @@
+.icon {
+  display: block;
+  width: $spacing-xl;
+  height: $spacing-xl;
+  background-size: cover;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  &--phone {
+    background-image: url(../../../images/icons/call.png);
+  }
+  &--menu {
+    background-image: url(../../../images/icons/menu.png);
+  }
+  &--close {
+    background-image: url(../../../images/icons/close.png);
+  }
+}

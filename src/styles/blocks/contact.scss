@@ -1,0 +1,59 @@
+.contact {
+  &__wrapper {
+    display: grid;
+    row-gap: $spacing-3xl;
+
+    @include page-grid;
+
+    @include on-tablet {
+      row-gap: $spacing-5xl;
+    }
+  }
+
+  &__form {
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      grid-column: 1/4;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__info {
+    font-size: 16px;
+    line-height: 140%;
+
+    &-label {
+      color: $muted-text;
+      margin-bottom: $spacing-xs;
+    }
+    &-text {
+      color: $dark-text;
+      margin-bottom: $spacing-xl;
+    }
+
+    grid-column: 1/-1;
+
+    @include on-tablet {
+      grid-column: 4/7;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: $spacing-base;
+    padding: $spacing-md $spacing-base;
+    font-size: $spacing-md;
+    border: none;
+    border-radius: $border-radius;
+    color: $placeholder-text;
+    background-color: $light-bg;
+  }
+}

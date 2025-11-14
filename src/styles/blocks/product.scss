@@ -1,0 +1,14 @@
+.product {
+  &__photo {
+    width: 100%;
+  }
+
+  &__description {
+    margin-top: $spacing-xs;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__price {
+    font-weight: $font-weight-bold;
+  }
+}

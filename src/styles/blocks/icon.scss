@@ -8,12 +8,12 @@
   @include hover(transform, scale(1.2));
 
   &--phone {
-    background-image: url(../images/icons/call.png);
+    background-image: url(../../images/icons/call.png);
   }
   &--menu {
-    background-image: url(../images/icons/menu.png);
+    background-image: url(../../images/icons/menu.png);
   }
   &--close {
-    background-image: url(../images/icons/close.png);
+    background-image: url(../../images/icons/close.png);
   }
 }

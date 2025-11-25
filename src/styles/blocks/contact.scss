@@ -18,7 +18,7 @@
     }
 
     @include on-desktop {
-      grid-column: span 6;
+      grid-column: span 5;
     }
   }
 
@@ -26,13 +26,17 @@
     font-size: 16px;
     line-height: 140%;
 
+    &-section {
+      margin-bottom: $spacing-xl;
+    }
+
     &-label {
       color: $muted-text;
       margin-bottom: $spacing-xs;
     }
     &-text {
       color: $dark-text;
-      margin-bottom: $spacing-xl;
+      text-decoration: none;
     }
 
     grid-column: 1/-1;
@@ -42,7 +46,7 @@
     }
 
     @include on-desktop {
-      grid-column: span 6;
+      grid-column: 7/-1;
     }
   }
 
@@ -51,9 +55,21 @@
     margin-bottom: $spacing-base;
     padding: $spacing-md $spacing-base;
     font-size: $spacing-md;
+    color: $main-text-color;
     border: none;
     border-radius: $border-radius;
-    color: $placeholder-text;
     background-color: $light-bg;
+
+    &--textarea {
+      resize: none;
+    }
+
+    &:focus {
+      outline: 1px solid $main-text-color;
+    }
+
+    &:hover {
+      outline: 1px solid #d5d7de;
+    }
   }
 }

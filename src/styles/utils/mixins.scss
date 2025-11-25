@@ -11,16 +11,18 @@
 }
 
 @mixin content-padding-inline() {
-  padding-inline: $spacing-lg;
+  padding-inline: $mobile-margin;
 
   @include on-tablet {
-    padding-inline: $spacing-tablet-padding;
+    max-width: $tablet-max-width;
+    margin-inline: auto;
+    padding-inline: $tablet-margin;
   }
 
   @include on-desktop {
-    min-width: 1020px;
+    max-width: $desktop-max-width;
     margin-inline: auto;
-    padding-inline: $spacing-7xl;
+    padding-inline: $desktop-margin;
   }
 }
 
@@ -37,19 +39,21 @@
 }
 
 @mixin page-grid() {
-  --columns: 2;
+  --columns: #{$mobile-columns};
 
   display: grid;
-  column-gap: $spacing-lg;
+  column-gap: $mobile-gutter;
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include on-tablet {
-    --columns: 6;
+    --columns: #{$tablet-columns};
 
-    column-gap: $spacing-xl;
+    column-gap: $tablet-gutter;
   }
 
   @include on-desktop {
-    --columns: 12;
+    --columns: #{$desktop-columns};
+
+    column-gap: $desktop-gutter;
   }
 }

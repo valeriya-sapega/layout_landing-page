@@ -2,6 +2,26 @@
 $tablet-min-width: 576px;
 $desktop-min-width: 1024px;
 
+// Grid Layout Specifications
+// Desktop
+$desktop-max-width: 1260px;
+$desktop-content-width: 1020px;
+$desktop-margin: 120px;
+$desktop-gutter: 24px;
+$desktop-columns: 12;
+
+// Tablet
+$tablet-max-width: 744px;
+$tablet-content-width: 600px;
+$tablet-margin: 72px;
+$tablet-gutter: 24px;
+$tablet-columns: 6;
+
+// Mobile
+$mobile-margin: 20px;
+$mobile-gutter: 20px;
+$mobile-columns: 2;
+
 // Animation
 $effect-duration: 0.3s;
 

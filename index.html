@@ -13,6 +13,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <script src="src/scripts/main.js" defer></script>
   </head>
   <!-- #endregion head -->
@@ -26,11 +27,9 @@
               <img src="images/logo.png" alt="Nothing Logo">
             </a>
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone">
-                <!--<img src="images/icons/call.png" alt="Call Icon">-->
+              <a href="tel:+1 234 5555-55-55" class="icon icon--phone">
               </a>
               <a href="#menu" class="icon icon--menu">
-                <!--<img src="images/icons/menu.png" alt="Menu Icon">-->
               </a>
             </div>
           </div>
@@ -162,7 +161,9 @@
 
                 <h3 class="category__title">Accessories</h3>
               </article>
-              <button class="button categories__button">View all</button>
+              <div class="categories__action">
+                <button class="button categories__button">View all</button>
+              </div>
             </div>
           </section>
           <section class="about-us" id="about-us">
@@ -181,14 +182,7 @@
               </div>
             </div>
           </section>
-        </div>
-      </div>
-
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-      <section class="contact" id="contact">
+          <section class="contact" id="contact">
             <h2 class="contact__title section-title">Contact us</h2>
             <div class="contact__wrapper">
               <form
@@ -201,7 +195,7 @@
                 <input
                   type="email" id="email"
                   name="email" class="contact__input"
-                  placeholder="Email" required>
+                  placeholder="Email" required />
                 <textarea
                   id="message" name="message"
                   class="contact__input contact__input--textarea"
@@ -209,15 +203,35 @@
                 <button type="submit" class="button contact__submit-button">Send</button>
               </form>
               <div class="contact__info">
+                <div class="contact__info-section">
                   <p class="contact__info-label">Phone</p>
-                  <p id="contact-phone" class="contact__info-text">+1 234 5555-55-55</p>
+                  <a id="contact-phone" class="contact__info-text"
+                  href="tel:+12345555555">+1 234 5555-55-55</a>
+                </div>
+
+                <div class="contact__info-section">
                   <p class="contact__info-label">Email</p>
-                  <p id="contact-email" class="contact__info-text">hello@nothing.com</p>
+                  <a id="contact-email" class="contact__info-text"
+                  href="mailto:hello@nothing.com">hello@nothing.com</a>
+                </div>
+                <div class="contact__info-section">
                   <p class="contact__info-label">Address</p>
-                  <p id="contact-address" class="contact__info-text">400 first ave.<br>Suite 700<br>Minneapolis, MN 55401</p>
+                  <a id="contact-address" class="contact__info-text"
+                  href="https://maps.google.com/?q=400+first+ave+Suite+700+Minneapolis+MN+55401" target="_blank">
+                    400 first ave.<br>Suite 700<br>Minneapolis, MN 55401
+                  </a>
+                </div>
               </div>
             </div>
-      </section>
+          </section>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <img src="images/about-us-bg.png" alt="footer background"
+      class="footer__bg-image">
     </footer>
     </div>
   </body>

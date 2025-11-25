@@ -20,7 +20,7 @@
   &__logo {
     height: $spacing-base;
 
-    @include hover(transform, scale(1.2));
+    @include hover(transform, scale(1.4));
 
     @include on-tablet {
       height: $spacing-xl;

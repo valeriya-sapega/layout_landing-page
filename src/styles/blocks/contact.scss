@@ -37,10 +37,6 @@
 
     grid-column: 1/-1;
 
-    // @include on-tablet {
-    //   grid-column: 4/7;
-    // }
-
     @include on-desktop {
       grid-column: 7/-1;
     }
@@ -66,6 +62,23 @@
 
     &:hover {
       outline: 1px solid #d5d7de;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px $light-bg inset !important;
+      -webkit-text-fill-color: $main-text-color !important;
+      background-color: transparent !important;
+    }
+
+    &:-moz-autofill {
+      background-color: transparent !important;
+    }
+
+    &:autofill {
+      background-color: transparent !important;
     }
   }
 }

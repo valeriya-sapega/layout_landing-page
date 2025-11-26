@@ -8,25 +8,27 @@
   &--phone {
     background-image: url(../../images/icons/call.png);
 
-    &::after {
-      content: '+1 234 5555-55-55';
-      position: absolute;
-      width: max-content;
-      right: 40px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-family: Inter, Arial, sans-serif;
-      font-size: $spacing-sm;
-      font-weight: $font-weight-bold;
-      letter-spacing: 2px;
-      color: $main-text-color;
-      text-align: right;
-      vertical-align: middle;
-      opacity: 0;
-    }
+    @include on-desktop {
+      &::after {
+        content: '+1 234 5555-55-55';
+        position: absolute;
+        width: max-content;
+        right: 40px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-family: Inter, Arial, sans-serif;
+        font-size: $spacing-sm;
+        font-weight: $font-weight-bold;
+        letter-spacing: 2px;
+        color: $main-text-color;
+        text-align: right;
+        vertical-align: middle;
+        opacity: 0;
+      }
 
-    &:hover::after {
-      opacity: 1;
+      &:hover::after {
+        opacity: 1;
+      }
     }
   }
 

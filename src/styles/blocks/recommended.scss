@@ -11,5 +11,10 @@
     @include on-desktop {
       grid-column: span 4;
     }
+
+    &--images {
+      margin-bottom: $spacing-xl;
+      overflow: hidden;
+    }
   }
 }
